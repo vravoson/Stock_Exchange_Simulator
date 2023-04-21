@@ -6,7 +6,7 @@ https://user-images.githubusercontent.com/90440729/233584453-2e0cf08f-2893-4e71-
 
 ## Goal
 
-The goal of this project is to simulate an equity stock exchange, where one security is traded by several strategic market participants.
+The goal of this project is to simulate an equity stock exchange, at the microstructure level, where one security is traded by several strategic market participants.
 
 Constraint: Use matplotlib to create visual snapshots of the stock exchange
 Results
@@ -23,11 +23,16 @@ Then, I implemented the behavior of several market participants:
 - Some noise
 - My own strategy
 
-In the visual snapshots of the limit order book, the plot at the bottom represents the evolution of the PnL of the trading algorithms over time.
+In the visual snapshots of the limit order book:
+- The plot at the top represents the 10 bid/ask limits of the limit order book.
+- The plot in the middle represents the midprice, as well as the prices at each of the 10 bid/ask limits of the limit order book.
+- The plot at the bottom represents the evolution of the PnL of the trading algorithms over time.
 
-## Improvements
+## Future Work
 
-The code becomes very slow after ~50 iterations, probably because of the order book data stored in memory. My system is also not able to handle a large number of market participants (4 market participants is already a lot).
+- The code slows down significantly after around 50 iterations, most likely due to the large amount of order book data being stored in memory and the accumulation of non-executed limit orders in the book.
+- My system is also unable to handle a large number of market participants, as it becomes very slow with more than five algorithmic traders (especially if they submit a lot of orders).
+- The visual stock exchange platform could be improved with additional features such as titles and a legend.
 
 
 
