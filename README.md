@@ -34,6 +34,7 @@ In the visual snapshots of the limit order book:
 - The code slows down significantly after around 50 iterations, most likely due to the large amount of order book data being stored in memory and the accumulation of non-executed limit orders in the book.
 - My system is also unable to handle a large number of market participants, as it becomes very slow with more than five algorithmic traders (especially if they submit a lot of orders).
 - The visual stock exchange platform could be improved with additional features such as titles and a legend.
+- Add several tests to check that the order flow is handled correctly at a microstructural level.
 
 
 
