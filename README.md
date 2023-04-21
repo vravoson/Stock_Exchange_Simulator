@@ -6,10 +6,11 @@ https://user-images.githubusercontent.com/90440729/233584453-2e0cf08f-2893-4e71-
 
 ## Goal
 
-The goal of this project is to simulate an equity stock exchange, at the microstructure level, where one security is traded by several strategic market participants.
+The goal of this personal project is to simulate an equity stock exchange at the microstructure level, with the aim of studying the dynamics of a single security traded by several strategic market participants. Through this simulation, we aim to analyze the behavior of market participants, the impact of various trading strategies, and the overall market liquidity and efficiency.
 
-Constraint: Use matplotlib to create visual snapshots of the stock exchange
-Results
+Constraint: Create visual snapshots of the stock exchange using only the Python package matplotlib.
+
+## Results
 
 I implemented the following features in the stock exchange:
 
